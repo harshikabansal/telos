@@ -1,0 +1,23 @@
+{
+  "name": "telos",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TELOS — Live with intention. Move with purpose.",
+  "type": "module",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "seed": "node scripts/seed-demo.mjs",
+    "test": "node scripts/test-suite.mjs",
+    "reset": "node scripts/reset-db.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.123.0",
+    "better-sqlite3": "^11.7.0",
+    "express": "^4.21.2"
+  }
+}

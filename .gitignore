@@ -1,0 +1,20 @@
+node_modules/
+
+# Secrets — never commit
+.env
+
+# Runtime state: the database, the dev secret, the simulated mail outbox
+data/
+*.db
+*.db-wal
+*.db-shm
+
+# Machine-local tool settings
+.claude/settings.local.json
+
+# Editor and OS noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
